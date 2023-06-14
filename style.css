@@ -1,0 +1,203 @@
+
+.hidden{
+    display: none;
+}
+
+#carouselExampleCaptions{
+    box-shadow: 1px solid;
+    position: relative;
+    margin-top: 50px;
+    animation: none;
+}
+
+.cart{
+    position: relative;
+    color: white;
+    display: block;
+    height: 30px;
+    top: 10px;
+}
+
+.badge-number{
+    position: absolute;
+    bottom: -2px;
+    right: -8px;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-title{
+    padding-right: 40px;
+}
+
+.slider-title2{
+    padding-right: 100px;
+}
+
+.slider3 h5{
+    color: black;
+}
+
+.slider3 p{
+    color: black;
+}
+
+.slider3-img img{
+    width:880px;
+    height: 460px;
+}
+
+.cardImg div .card img{
+    width: 200px;
+    height: 200px;
+}
+
+.external-link i{
+    padding-left: 186.8px;
+}
+
+
+
+.long-slider .card{
+    max-width: 27.2%;
+}
+.info-title{
+    position: absolute;
+    top: 1197px;
+    left: 830px;
+
+}
+.info-text{
+    position: absolute;
+    top: 1297px;
+    left: 728px;
+
+}
+
+.info-link{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+}
+
+.col-md-4 .card img{
+    width: 286px;
+    height: 214.73px;
+}
+
+.col-md-4 .card .card-body a i{
+    position: relative;
+    left: 50%;
+}
+
+.comp-link .card .card-body a i{
+    position: relative;
+    left: 50%;
+}
+
+.comp-img .col-md-4 .card img{
+    width: 286px;
+    height: 214.72px;
+}
+
+.contact{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.about a,
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+#banner img{
+    width: 100%;
+    height: 50%;
+}
+
+/* Blog */
+
+#build-info a{
+    text-decoration: none;
+    color: #000;
+}
+
+#build-info a:hover{
+    
+    color: #0055FF;
+}
+
+#build-text .build-info-text img{
+    width: 1280px;
+    height: 720px;
+}
+
+.carousel-item .cooling img{
+    width: 1280px;
+    height: 720px;
+}
+
+.loginDrop .user-name{
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+/* Medium Screen */
+
+@media (max-width: 990px){
+    .slider3-img img{
+       width: 600px;
+       height: 250px;
+    }
+
+    .card-box .card{
+        margin-right: 0px;
+    }
+
+    .cardImg div .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .external-link i{
+        padding-left: 120px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .add-to-cart .card-footer button{
+        width: 90px;
+    }
+
+    #build-text .build-info-text img{
+        width: 720px;
+        height: 480px;
+    }
+}
+
+/* Small Screen */
+
+@media (max-width: 600px){
+    #build-text .build-info-text img{
+        width: 440px;
+        height: 240px;
+    }
+}

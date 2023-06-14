@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>E-Commerce Computer</title>
+</head>
+<body>
+
+<!--Nav Bar-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      
+      
+      
+      <a class="navbar-brand" href="#">Computers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">PC Parts</a></li>
+              <li><a class="dropdown-item" href="#">Pre-Built PCs</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" class="cart">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="badge-number">0</span>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      </div>
+    <button type="button" class="btn btn-outline-light login-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+    <li class="nav-item dropdown loginDrop">
+            <a class="nav-link dropdown-toggle user-name visually-hidden" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                L</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><button type="button" class="dropdown-item btn btn-outline-dark signout">Sign Out</button></li>
+            </ul>
+      </li>
+</nav>
+
+<!--Modal Login Window-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn btn-outline-dark loginModal">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Slider Section-->
+  
+<div id="carouselExampleCaptions" class="carousel slide container-sm" data-aos="fade-up" data-aos-duration="1500">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner slider1">
+    <div class="carousel-item active">
+      <img src="img/Slider images/Pre Built Pc.png" class="d-block w-100 rounded float-start" alt="...">
+    </div>
+    <div class="carousel-item slider2">
+      <img src="img/Slider images/PC Parts Banner.jpg" class="d-block w-100 rounded float-start" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="text-start slider-title2"><button type="button" class="btn btn-outline-light learn-btn">Learn</button> how to build a PC</h5>
+        <p class="text-start">Get all the parts to build your next system</p>
+      </div>
+    </div>
+    <div class="carousel-item slider3-img">
+      <img src="img/Slider images/work from home.png" class="d-block w-100 rounded float-start" alt="...">
+      <div class="carousel-caption d-none d-md-block slider3">
+        <h5>Working From Home Made Easy</h5>
+        <p>Get all the equipment to make life at home easy.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--Feature Section-->
+
+<section id="featured">
+  <div class="container">
+    <h2 class="display-2 text-center p-5">New Arrivals</h2>
+  </div>
+  <div class="featured-products container">
+    <div class="row">
+      
+      <div class="col ">
+        <div class="card" style="width: 18rem;">
+          <img src="img/featured/rtx4060.png" class="img-fluid" alt="">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Rtx 4060</strong></h5>
+            <p class="card-text">$349.99 
+              
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-dark cart-btn" id="product-1">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="img/featured/rtx4060.png" class="img-fluid" alt="">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Rtx 4060ti</strong></h5>
+            <p class="card-text">$399.99</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-dark cart-btn" id="product-2">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="img/featured/rtx 4070.jpg" class="img-fluid" alt="">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Rtx 4070</strong></h5>
+            <p class="card-text">$499.99 
+             
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-dark cart-btn" id="product-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col ">
+        <div class="card" style="width: 18rem;">
+          <img src="img/featured/rtx 4070ti.jpg" class="img-fluid" alt="">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Rtx 4070ti</strong></h5>
+            <p class="card-text">$599.99 
+              
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-dark cart-btn" id="product-4">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col my-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/featured/4080.jpg" class="img-fluid" alt="">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Rtx 4080</strong></h5>
+            <p class="card-text">$699.99 
+             
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-dark cart-btn" id="product-5">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col my-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/featured/rtx 4090.jpg" class="img-fluid" alt="">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Rtx 4090</strong></h5>
+            <p class="card-text">$999.99 
+              
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-dark cart-btn" id="product-6">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col my-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/featured/rtx 3090.jpg" class="img-fluid" alt="">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Rtx 3090</strong></h5>
+            <p class="card-text">$799.99 
+              
+            </p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-dark cart-btn" id="product-7">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col my-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/featured/rtx 3090ti.jpg" class="img-fluid" alt="">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Rtx 3090ti</strong></h5>
+            <p class="card-text">$799.99</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-dark cart-btn" id="product-8">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Pre-Built Section-->
+
+<div class="container" data-aos="fade-up" data-aos-duration="2000">
+  <h2 class="container display-2 text-center p-5">Pre Built PC</h2>
+  <div class="container row prebuilt-box">
+    <div class="col-md-4 my-3">
+      <div class="card shadow-sm" style="width: 18rem;">
+        <img src="img/Pre Built PC/PC1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pre Built PC</h5>
+          <p class="card-text"><strong>$499.99</strong></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">GPU <strong>Rtx 4060</strong></li>
+          <li class="list-group-item">CPU <strong>Intel i7-12700K</strong></li>
+          <li class="list-group-item">Ram <strong>32 GB</strong></li>
+        </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card shadow-sm" style="width: 18rem;">
+        <img src="img/Pre Built PC/PC2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pre Built PC</h5>
+          <p class="card-text"><strong>$599.99</strong></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">GPU <strong>Rtx 4070</strong></li>
+          <li class="list-group-item">CPU <strong>Intel i7-12700K</strong></li>
+          <li class="list-group-item">Ram <strong>32 GB</strong></li>
+        </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card shadow-sm" style="width: 18rem;">
+        <img src="img/Pre Built PC/PC3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pre Built PC</h5>
+          <p class="card-text"><strong>$699.99</strong></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">GPU <strong>Rtx 4080</strong></li>
+          <li class="list-group-item">CPU <strong>Intel i7-12700K</strong></li>
+          <li class="list-group-item">Ram <strong>32 GB</strong></li>
+        </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card shadow-sm" style="width: 18rem;">
+        <img src="img/Pre Built PC/PC4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pre Built PC</h5>
+          <p class="card-text"><strong>$799.99</strong></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">GPU <strong>Rtx 4060ti</strong></li>
+          <li class="list-group-item">CPU <strong>Intel i7-12700K</strong></li>
+          <li class="list-group-item">Ram <strong>32 GB</strong></li>
+        </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card shadow-sm" style="width: 18rem;">
+        <img src="img/Pre Built PC/PC5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pre Built PC</h5>
+          <p class="card-text"><strong>$899.99</strong></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">GPU <strong>Rtx 4070ti</strong></li>
+          <li class="list-group-item">CPU <strong>Intel i7-12700K</strong></li>
+          <li class="list-group-item">Ram <strong>32 GB</strong></li>
+        </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card shadow-sm" style="width: 18rem;">
+        <img src="img/Pre Built PC/PC6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pre Built PC</h5>
+          <p class="card-text"><strong>$999.99</strong></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">GPU <strong>Rtx 4090</strong></li>
+          <li class="list-group-item">CPU <strong>Intel i7-12700K</strong></li>
+          <li class="list-group-item">Ram <strong>32 GB</strong></li>
+        </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Other Section-->
+
+<div class="container" data-aos="fade-up" data-aos-duration="2000">
+  <h2 class="container display-2 text-center p-5">Components</h2>
+  <div class="row comp-link comp-img">
+    <div class="col-md-4 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Components/motherboard.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Motherboard</h5>
+          <p class="card-text"><strong>$299.99</strong></p>
+          <a href=""></a>
+          <button class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          <a href="https://www.amazon.com/Motherboards-Computer-Add-Ons-Computers/b?ie=UTF8&node=1048424" target="_blank"><i class="fal fa-external-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Components/cpu.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CPU</h5>
+          <p class="card-text"><strong>$249.99</strong></p>
+          <a href=""></a>
+          <button class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          <a href="https://www.amazon.com/s?k=core+i7+12th+gen&rh=n%3A1048424&ref=nb_sb_noss" target="_blank"><i class="fal fa-external-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Components/ram.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">RAM</h5>
+          <p class="card-text"><strong>$99.99</strong></p>
+          <a href=""></a>
+          <button class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          <a href="https://www.amazon.com/s?k=ram+gskill&crid=QYYD6A42SA59&sprefix=ram+gskill%2Caps%2C101&ref=nb_sb_noss_1" target="_blank"><i class="fal fa-external-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Components/m.2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">M.2 Nvme SSD</h5>
+          <p class="card-text"><strong>$99.99</strong></p>
+          <a href=""></a>
+          <button class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          <a href="https://www.amazon.com/s?k=m.2+ssd&crid=7MCJSTW4NNTV&sprefix=m.2+ssd%2Caps%2C112&ref=nb_sb_noss_1" target="_blank"><i class="fal fa-external-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Components/aio.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aio Cooler</h5>
+          <p class="card-text"><strong>$69.99</strong></p>
+          <a href=""></a>
+          <button class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          <a href="https://www.amazon.com/s?k=aio+cooler&sprefix=aio+co%2Caps%2C141&ref=nb_sb_ss_ts-doa-p_2_6" target="_blank"><i class="fal fa-external-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Components/PC case.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PC Case</h5>
+          <p class="card-text"><strong>$39.99</strong></p>
+          <a href=""></a>
+          <button class="btn btn-outline-dark cart-btn">Add to Cart</button>
+          <a href="https://www.amazon.com/s?k=pc+case&sprefix=pc+%2Caps%2C117&ref=nb_sb_ss_ts-doa-p_2_3" target="_blank"><i class="fal fa-external-link"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer Section-->
+
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <a class="contact" href="index.html">Computers</a>
+        <h5><strong>Address:</strong> Richardson, TX 75080</h5>
+        <h5><strong>Phone:</strong> 123-456-7890</h5>
+        <h5><strong>Hours:</strong> 9AM-6PM</h5>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 about">
+        <h5>About</h5>
+        <a href="" class="list-group">Sign In</a>
+        <a href="" class="list-group">Track my Order</a>
+        <a href="" class="list-group">Cart</a>
+        <a href="" class="list-group">Saved</a>
+        <a href="" class="list-group">Contact Us</a>
+      </div>
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 links">
+        <h5>Links</h5>
+        <a href="" class="list-group">Home</a>
+        <a href="" class="list-group">About</a>
+        <a href="" class="list-group">Contact</a>
+        <a href="" class="list-group">Products</a>
+        <a href="" class="list-group">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    
+   
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="script.js"></script>
+</body>
+</html>

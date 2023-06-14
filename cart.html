@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>E-Commerce Computer</title>
+</head>
+<body>
+
+<!--Nav Bar-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Computers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">PC Parts</a></li>
+              <li><a class="dropdown-item" href="#">Pre-Built PCs</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" class="cart active">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="badge-number">0</span>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      </div>
+    <button type="button" class="btn btn-outline-light login-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+    <li class="nav-item dropdown loginDrop">
+            <a class="nav-link dropdown-toggle user-name visually-hidden" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                L</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><button type="button" class="dropdown-item btn btn-outline-dark signout">Sign Out</button></li>
+            </ul>
+      </li>
+</nav>
+
+<!--Modal Login Window-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn btn-outline-dark loginModal">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Cart Table-->
+
+<section id="cart">
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    
+                    <th scope="col"><button type="button" class="btn btn-outline-dark clear-cart">Clear Cart</button></th>
+                </tr>
+            </thead>
+            <tbody class="cartTable">
+                
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+<!--Footer Section-->
+
+<footer class="bg-dark text-white pt-5 pb-4 fixed-bottom">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <a class="contact" href="index.html">Computers</a>
+        <h5><strong>Address:</strong> Richardson, TX 75080</h5>
+        <h5><strong>Phone:</strong> 123-456-7890</h5>
+        <h5><strong>Hours:</strong> 9AM-6PM</h5>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 about">
+        <h5>About</h5>
+        <a href="" class="list-group">Sign In</a>
+        <a href="" class="list-group">Track my Order</a>
+        <a href="" class="list-group">Cart</a>
+        <a href="" class="list-group">Saved</a>
+        <a href="" class="list-group">Contact Us</a>
+      </div>
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 links">
+        <h5>Links</h5>
+        <a href="" class="list-group">Home</a>
+        <a href="" class="list-group">About</a>
+        <a href="" class="list-group">Contact</a>
+        <a href="" class="list-group">Products</a>
+        <a href="" class="list-group">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    
+   
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="script.js"></script>
+</body>
+</html>

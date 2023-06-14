@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>E-Commerce Computer</title>
+</head>
+<body>
+
+<!--Nav Bar-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      
+      
+      
+      <a class="navbar-brand" href="#">Computers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">PC Parts</a></li>
+              <li><a class="dropdown-item" href="#">Pre-Built PCs</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" class="cart">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="badge-number">0</span>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      </div>
+    <button type="button" class="btn btn-outline-light login-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+    <li class="nav-item dropdown loginDrop">
+            <a class="nav-link dropdown-toggle user-name visually-hidden" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                L</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><button type="button" class="dropdown-item btn btn-outline-dark signout">Sign Out</button></li>
+            </ul>
+      </li>
+</nav>
+
+<!--Modal Login Window-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn btn-outline-dark loginModal">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="build-info">
+    <div class="container">
+      <a href="https://www.youtube.com/watch?v=BL4DCEp7blY&t=17s" target="_blank"><h1 class="text-center bottom-5 fs-1 pt-3">Building Your Own PC</h4></a>
+    </div>
+</section>
+
+<section id="build-text">
+  <div class="container display-6 fs-5 my-3">
+    <p class="text-break lh-lg">
+    Whether you're a gaming enthusiast, a content creator, or a tech-savvy individual, our blog is your go-to resource for step-by-step guides, in-depth product reviews, and expert tips and tricks. 
+    From selecting the right components for your budget and performance goals to assembling and optimizing your system, we'll be your trusted companion throughout the entire process. 
+    Join our community of like-minded PC enthusiasts, share your experiences, and let's explore the thrilling world of PC building together. 
+    Get ready to unlock your PC's true potential and elevate your computing experience to new heights! After selecting your desired parts, read the info below to get started.
+  </p>
+  </div>
+  <div class="container build-info-text">
+    <h3 class="my-3">CPU</h3>
+    <img src="img/blog/CPU.jpg" class="img-fluid rounded cpu-img" alt="...">
+    <p class="display-6 fs-5 my-3 text-break lh-lg">
+      When it comes to building a PC, choosing the right CPU is a critical decision. The CPU, or Central Processing Unit, is the powerhouse of your system, responsible for executing instructions and performing calculations. 
+      It's like the brain that drives the overall performance and speed of your computer. The CPU's performance is determined by factors such as the number of cores, clock speed, and cache size. 
+      Multiple cores enable efficient multitasking and smoother execution of demanding applications. Clock speed, measured in gigahertz (GHz), indicates how fast the CPU can process instructions.
+    </p>
+    <h3 class="my-3">Motherboard</h3>
+    <img src="img/blog/Motherboard.jpg" class="img-fluid rounded" alt="...">
+    <p class="display-6 fs-5 my-3 text-break lh-lg">
+      The motherboard is the backbone of your PC, connecting and coordinating all the crucial components. It's like a command center that enables seamless communication between the CPU, memory, storage, graphics card, and other peripherals.
+      When it comes to choosing a motherboard for your PC build, there are a few key factors to consider. First, make sure the motherboard is compatible with your chosen CPU socket type. 
+      This ensures proper fitment and functionality. The motherboard should also have sufficient expansion slots and connectors to accommodate your desired components, such as graphics cards, storage drives, and RAM modules.
+    </p>
+    <h3 class="my-3">GPU</h3>
+    <img src="img/blog/GPU.jpg" class="img-fluid rounded" alt="...">
+    <p class="display-6 fs-5 my-3 text-break lh-lg">
+      The GPU, or Graphics Processing Unit, is an essential component for any PC build, especially for gaming and graphics-intensive tasks. 
+      The GPU is responsible for rendering and displaying images, videos, and animations on your monitor. When choosing a GPU, consider factors such as performance, compatibility, and budget. 
+      The performance of a GPU is determined by its core clock speed, memory capacity, and architecture. 
+      Higher core clock speeds and larger memory capacities generally result in better performance. 
+      It's important to ensure that the GPU is compatible with your motherboard and power supply unit (PSU) in terms of physical size and power requirements.
+    </p>
+    <h3 class="my-3">RAM</h3>
+    <img src="img/blog/RAM.jpg" class="img-fluid rounded" alt="...">
+    <p class="display-6 fs-5 my-3 text-break lh-lg">
+      When selecting RAM for your PC build, there are a few key considerations. First, determine the amount of RAM you need based on your specific requirements. 
+      Gaming and content creation tasks generally benefit from larger amounts of RAM, while everyday computing can function well with smaller capacities. Next, consider the RAM's speed, which is measured in megahertz (MHz). 
+      Higher speeds allow for faster data transfer between the RAM and CPU, resulting in improved performance. However, it's important to ensure that the RAM speed is compatible with your motherboard's supported frequencies
+    </p>
+    <h3 class="my-3">Storage</h3>
+    <img src="img/blog/SSD.jpg" class="img-fluid rounded" alt="...">
+    <p class="display-6 fs-5 my-3 text-break lh-lg">
+      Storage is a crucial component when it comes to building a PC, as it determines the capacity and speed at which you can store and access your data. There are several options available for PC storage, each with its own benefits and considerations.
+      Hard Disk Drives (HDDs) offer large storage capacities at affordable prices. Solid State Drives (SSDs) have gained popularity due to their faster data transfer speeds and improved overall system performance. 
+      For maximum performance, some PC builders opt for a combination of SSD and HDD storage. 
+      They use an SSD as the primary drive for the operating system and essential applications, while using an HDD for bulk storage of less frequently accessed files.
+    </p>
+    <h3 class="my-3">Cases</h3>
+    <img src="img/blog/case.jpg" class="img-fluid rounded" alt="...">
+    <p class="display-6 fs-5 my-3 text-break lh-lg">
+      The PC case is not just a housing for your components; it also plays a crucial role in the overall functionality, aesthetics, and cooling of your build. When selecting a case for your PC build, there are several factors to consider.
+      First, consider the form factor of the case. Common form factors include ATX, Micro ATX, and Mini-ITX. Next, consider the airflow and cooling options of the case. Another important consideration is the number and placement of drive bays.
+      Cable management is also crucial for a clean and organized build. Aesthetics and personal preferences also come into play. 
+      Lastly, don't forget about additional features such as front panel ports (USB, audio), dust filters, tool-less installation, and any other conveniences that can enhance your building and usage experience.
+    </p>
+    <h3 class="my-3">Cooling</h3>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item active cooling">
+      <img src="img/blog/aio.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Aio Cooler</h5>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/blog/liquid cooling.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Liquid Cooling</h5>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/blog/fans.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Fans</h5>
+       
+      </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <p class="display-6 fs-5 my-3 text-break lh-lg">
+      Cooling is a critical aspect of PC building to ensure that your components operate within safe temperature ranges and maintain optimal performance. There are two primary methods of cooling: air cooling and liquid cooling.
+      Air cooling typically involves using fans and heatsinks to dissipate heat generated by the CPU, GPU, and other components.
+      Liquid cooling, also known as water cooling, is a more advanced cooling solution that uses a closed-loop system or custom loops to circulate liquid coolant.
+    </p>
+    <p class="display-6 fs-5 my-3 text-break lh-lg">
+      Building a PC is an exciting and rewarding endeavor that allows you to create a customized machine perfectly tailored to your needs. 
+      By carefully selecting components like the CPU, motherboard, GPU, RAM, storage, and case, you can build a PC that delivers exceptional performance, reliability, and aesthetics. 
+      Whether you're a gamer, content creator, or simply seeking a powerful workstation, the process of building a PC empowers you to unlock your creativity, explore cutting-edge technologies, and optimize your computing experience.
+      With the vast resources, tutorials, and community support available, embarking on a PC building journey has never been easier. So, dive in, research, plan, and enjoy the satisfaction of assembling your dream machine. 
+      Building a PC not only provides a sense of accomplishment but also opens up a world of possibilities for exploring the vast realms of technology and unleashing your true potential.
+    </p>
+  </div>
+</section>
+
+
+<!--Footer Section-->
+
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <a class="contact" href="index.html">Computers</a>
+        <h5><strong>Address:</strong> Richardson, TX 75080</h5>
+        <h5><strong>Phone:</strong> 123-456-7890</h5>
+        <h5><strong>Hours:</strong> 9AM-6PM</h5>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 about">
+        <h5>About</h5>
+        <a href="" class="list-group">Sign In</a>
+        <a href="" class="list-group">Track my Order</a>
+        <a href="" class="list-group">Cart</a>
+        <a href="" class="list-group">Saved</a>
+        <a href="" class="list-group">Contact Us</a>
+      </div>
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 links">
+        <h5>Links</h5>
+        <a href="" class="list-group">Home</a>
+        <a href="" class="list-group">About</a>
+        <a href="" class="list-group">Contact</a>
+        <a href="" class="list-group">Products</a>
+        <a href="" class="list-group">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    
+   
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
